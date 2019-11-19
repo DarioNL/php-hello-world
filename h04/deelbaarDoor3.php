@@ -10,4 +10,4 @@ function deelbaarDoor3($getal){
         echo $getal." niet deelbaar door 3 ";
     }
 }
-deelbaarDoor3( 4);
+deelbaarDoor3( 3);
