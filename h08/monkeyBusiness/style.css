@@ -17,3 +17,11 @@ body{
     color: #ff8400;
     line-height: 6.0vh;
 }
+
+.p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
