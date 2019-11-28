@@ -1,5 +1,6 @@
 <?php
 
+
 function VoegAutoToeOverzicht(){
     $autos[] = "audi1";
     $autos[] = "ferrari1";
@@ -18,9 +19,15 @@ function VoegAutoToeOverzicht(){
     $autos[] = "vw2";
     $autos[] = "vw3";
 
-    foreach ($autos as $auto) {
-            echo "<img id='auto' src='img/".$auto."'.jpg\ alt='".$auto."'>";
+    $prijzen[] = 21872817;
+    $prijzen[] = 364627;
 
+    foreach ($autos as $auto) {
+            echo "<img id='auto' src='img/" . $auto . "'.jpg\ alt='" . $auto . "'>";
+    }
+
+    foreach ($prijzen as $prijs){
+        echo "".$prijs."";
     }
 }
 
@@ -74,5 +81,6 @@ function getGefilterdeLijst(){
             }
             break;
     }
+
 }
 ?>

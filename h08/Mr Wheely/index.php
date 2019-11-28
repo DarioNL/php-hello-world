@@ -1,5 +1,6 @@
 <?php
-include_once ("AutoOverzicht.php")
+include_once ("AutoOverzicht.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,7 @@ include_once ("AutoOverzicht.php")
 <header>
     <img src="img/wheely_header.jpg" alt="Mr Wheeky logo">
 </header>
+
 <form role="form" method="post">
 <div class="form">
     <label for="sell">Merk:</label>
@@ -38,8 +40,10 @@ include_once ("AutoOverzicht.php")
 </form>
 <br>
 <?php
-if ($_POST['merk'] !="") {
-    getGefilterdeLijst();
+if (isset($_POST['merk'])){
+    if ($_POST['merk'] != ""){
+        getGefilterdeLijst();
+    }
 }else{
     VoegAutoToeOverzicht();
 }
