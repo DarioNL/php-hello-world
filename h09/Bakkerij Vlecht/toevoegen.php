@@ -1,5 +1,14 @@
 <?php
 
+$message = "";
+
+if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
+    && !empty($_POST['uivoering'])&& !empty($_POST['categorie']))  {
+    $message = "Het versturen is gelukt.";
+}else{
+    $message = "Vul alles in!";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -17,28 +26,28 @@
     <a href="index.php">Overzicht</a>
     <a href="toevoegen.php">Broodjes toevoegen</a>
 </nav>
-<h1>
-    Broodjes weergeven
-</h1>
-<p>
-    Globale informatie van de verschillende broodjes
-</p>
-<form role="form" method="post">
+
+<h2>
+    <?php
+    echo $message;
+    ?>
+</h2>
+<form role="form" method="post" action="BroodTabel.php" enctype="multipart/form-data">
 <div class="form">
-    <label for="userfile[]">Bestanden:</label>
-    <input name="userfile[]" type="file" multiple="multiple" class="form-control" id="userfile[]">
+    <label for="userfile[]">Afbeelding</label>
+    <input  type="file" class="Form kiezen" name="bestand">
 </div>
 <div class="form">
-    <label for="type">Omschrijving:</label>
-    <input type="text" class="Form kiezen" name="omschijving" value="">
+    <label for="type">Naam:</label>
+    <input type="text" class="Form kiezen" name="naam" value="">
 </div>
 <div class="form">
-    <label for="type">Uitvoering:</label>
-    <input type="text" class="Form kiezen" name="uivoering" value="">
+    <label for="type">Soort:</label>
+    <input type="text" class="Form kiezen" name="soort" value="">
 </div>
 <div>
-    <label for="type">Categorie:</label>
-    <input type="text" class="Form kiezen" name="categorie">
+    <label for="type">Gewicht:</label>
+    <input type="text" class="Form kiezen" name="gewicht">
 </div>
 <button type="submit" name="knop" class="btn btn-default">Submit</button>
 </form>
