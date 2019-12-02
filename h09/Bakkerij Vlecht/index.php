@@ -1,4 +1,6 @@
 <?php
+include ('DataOphalen.php');
+include ('TabelTellen.php')
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +26,11 @@
 </p>
 <table class="tabel">
 <tbody>
+<tr>
+    <?php
 
+    ?>
+</tr>
 </tbody>
 </table>
 

@@ -5,7 +5,7 @@
 <head>
     <title>PHP Opdrachten</title>
     <style>
-        
+
     </style>
 </head>
 <body>

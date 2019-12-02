@@ -32,7 +32,7 @@ if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
     echo $message;
     ?>
 </h2>
-<form role="form" method="post" action="BroodTabel.php" enctype="multipart/form-data">
+<form role="form" method="post" action="BroodTabelToevoegen.php" enctype="multipart/form-data">
 <div class="form">
     <label for="userfile[]">Afbeelding</label>
     <input  type="file" class="Form kiezen" name="bestand">
