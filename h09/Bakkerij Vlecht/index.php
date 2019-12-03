@@ -8,12 +8,15 @@ include ('TabelTellen.php')
 <head>
     <meta charset="UTF-8">
     <title>Bakkerij Vlecht</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="broodstyle.css" rel="stylesheet">
 </head>
-<body
+<body>
 <header>
-    <img src="img/baguette.jpg" alt="Mr Wheeky logo">
+    <div class="container">
+        <h2 style="color:white">Bakkerij Vlecht Beheer</h2>
+    </div>
 </header>
+<div class="start">
 <nav>
     <a href="index.php">Overzicht</a>
     <a href="toevoegen.php">Broodjes toevoegen</a>
@@ -21,18 +24,16 @@ include ('TabelTellen.php')
 <h1>
     Broodjes weergeven
 </h1>
-<p>
+<p class="lead">
     Globale informatie van de verschillende broodjes
 </p>
 <table class="tabel">
 <tbody>
-<tr>
     <?php
-
+    TabelMaken();
     ?>
-</tr>
 </tbody>
 </table>
-
+</div>
 </body>
 </html>

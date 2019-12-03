@@ -16,11 +16,13 @@ if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
 <head>
     <meta charset="UTF-8">
     <title>Bakkerij Vlecht</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="broodstyle2.css" rel="stylesheet">
 </head>
 <body
 <header>
-    <img src="img/baguette.jpg" alt="Mr Wheeky logo">
+    <div class="container">
+        <h2 style="color:white">Bakkerij Vlecht Beheer</h2>
+    </div>
 </header>
 <nav>
     <a href="index.php">Overzicht</a>
