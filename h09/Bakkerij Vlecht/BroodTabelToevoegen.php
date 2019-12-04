@@ -20,3 +20,7 @@ $stmt->bind_param('ssss', $target_location, $naam, $soort, $gewicht) or die('Err
 $stmt->execute() or die('Error inserting image in database.');
 $stmt->close();
 $aantalBrooden = 2;
+
+echo "<nav>
+    <a href=\"index.php\">Overzicht</a>
+    </nav>";

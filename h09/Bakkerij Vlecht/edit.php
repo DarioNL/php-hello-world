@@ -1,6 +1,6 @@
 <?php
 
-$_GET['id'];
+$id = $_GET['id'];
 
 $message = "";
 
@@ -41,15 +41,15 @@ if (isset($_FILES['bestandAanpassen']) && !empty($_POST['omschijvingAanpassen'])
     <input  type="file" class="Form kiezen" name="bestandAanpassen">
 </div>
 <div class="form">
-    <label for="type">Naam:</label>
+    <label class="naam1" for="type">Naam:</label>
     <input type="text" class="Form kiezen" name="naamAanpassen" value="">
 </div>
 <div class="form">
-    <label for="type">Soort:</label>
+    <label class="soort1" for="type">Soort:</label>
     <input type="text" class="Form kiezen" name="soortAanpassen" value="">
 </div>
 <div>
-    <label for="type">Gewicht(gram):</label>
+    <label class="type1" for="type">Gewicht(gram):</label>
     <input type="text" class="Form kiezen" name="gewichtAanpassen">
 </div>
 <button type="submit" name="knop" class="btn btn-default">Submit</button>
