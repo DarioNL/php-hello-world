@@ -29,6 +29,21 @@ include ('TabelTellen.php')
 </p>
 <table class="tabel">
 <tbody>
+<tr id="namen">
+    <td>
+        naam
+    </td>
+    <td>
+        gewicht
+    </td>
+    <td>
+        soort
+    </td>
+    <td>
+        extra details
+    </td>
+
+</tr>
     <?php
     TabelMaken();
     ?>

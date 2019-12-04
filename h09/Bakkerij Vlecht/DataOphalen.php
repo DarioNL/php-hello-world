@@ -1,7 +1,7 @@
 <?php
 
 
-    function TabelMaken()
+    function tabelmaken()
     {
         $dbc = mysqli_connect('localhost','root', '', 'bakkerijvlecht') or die('Error connecting.');
         $query = "SELECT* FROM broodjes";
@@ -17,6 +17,9 @@
             echo "<td>";
             echo $row["soort"];
             echo "<br>";
+            echo "</td>";
+            echo "<td>";
+            echo "<nav> <a href=\"details.php?id=".$row['image_id'] ."\">details</a></nav>";
             echo "</td>";
             echo "<tr>";
         }

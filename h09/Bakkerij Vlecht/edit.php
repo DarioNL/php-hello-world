@@ -1,9 +1,11 @@
 <?php
 
+$_GET['id'];
+
 $message = "";
 
-if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
-    && !empty($_POST['uivoering'])&& !empty($_POST['categorie']))  {
+if (isset($_FILES['bestandAanpassen']) && !empty($_POST['omschijvingAanpassen'])
+    && !empty($_POST['uivoeringAanpassen'])&& !empty($_POST['categorieAanpassen']))  {
     $message = "Het versturen is gelukt.";
 }else{
     $message = "Vul alles in!";
@@ -16,7 +18,7 @@ if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
 <head>
     <meta charset="UTF-8">
     <title>Bakkerij Vlecht</title>
-    <link href="broodstyle.css" rel="stylesheet">
+    <link href="broodstyle2.css" rel="stylesheet">
 </head>
 <body
 <header>
@@ -28,28 +30,27 @@ if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
     <a href="index.php">Overzicht</a>
     <a href="toevoegen.php">Broodjes toevoegen</a>
 </nav>
-
 <h2>
     <?php
     echo $message;
     ?>
 </h2>
-<form role="form" method="post" action="BroodTabelToevoegen.php" enctype="multipart/form-data">
+<form role="form" method="post" enctype="multipart/form-data" action="BroodTabelAanpassen.php?id=<?php echo $id ?>">
 <div class="form">
     <label for="userfile[]">Afbeelding</label>
-    <input  type="file" class="Form kiezen" name="bestand">
+    <input  type="file" class="Form kiezen" name="bestandAanpassen">
 </div>
 <div class="form">
     <label for="type">Naam:</label>
-    <input type="text" class="Form kiezen" name="naam" value="">
+    <input type="text" class="Form kiezen" name="naamAanpassen" value="">
 </div>
 <div class="form">
     <label for="type">Soort:</label>
-    <input type="text" class="Form kiezen" name="soort" value="">
+    <input type="text" class="Form kiezen" name="soortAanpassen" value="">
 </div>
 <div>
     <label for="type">Gewicht(gram):</label>
-    <input type="text" class="Form kiezen" name="gewicht">
+    <input type="text" class="Form kiezen" name="gewichtAanpassen">
 </div>
 <button type="submit" name="knop" class="btn btn-default">Submit</button>
 </form>

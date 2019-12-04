@@ -21,6 +21,7 @@ header {
     font-family: Arial, sans-serif;
     font-weight: normal;
     margin-bottom: 20px;
+    color: #333333;
 }
 
 a{
@@ -35,11 +36,13 @@ a{
 h1{
     font: 36px Arial, sans-serif;
     margin: 20px 0 10px;
+    color: #333333;
 }
 
 p.lead{
     font: 21px Arial, sans-serif;
     margin: 0 0 20px;
+    color: #333333;
 }
 
 td{
@@ -57,4 +60,8 @@ td{
 table{
     border-spacing: 0;
     border-collapse: collapse;
+}
+
+tr#namen{
+    font-weight: bold;
 }
