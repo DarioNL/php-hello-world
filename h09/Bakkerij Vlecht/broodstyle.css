@@ -38,27 +38,15 @@ p.lead{
     margin: 0 0 20px;
     color: #333333;
 }
-td{
+td {
     color: #333333;
     font: 16px Arial, sans-serif;
     margin: 8px;
-    border-bottom: 1px  solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     border-top: 1px solid #dddddd;
     vertical-align: top;
     line-height: 1.4;
     display: table-cell;
     width: 364px;
 }
-table{
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-tr#namen{
-    font-weight: bold;
-}
-label.naam1 {
-    margin-right: 60px;
-}
-label.soort1 {
-    margin-right: 63px;
-}
+
