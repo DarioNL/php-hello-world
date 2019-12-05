@@ -17,7 +17,7 @@ $gewicht = $_POST['gewichtAanpassen'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bakkerijvlecht";
+$dbname = "58151";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection

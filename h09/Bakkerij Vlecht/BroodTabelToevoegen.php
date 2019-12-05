@@ -12,7 +12,7 @@ $soort = $_POST['soort'];
 $gewicht = $_POST['gewicht'];
 
 // De database die wordt gebruikt.
-$mysqli = new mysqli('localhost', 'root', '', 'bakkerijvlecht', '3306') or die('Error connecting.');
+$mysqli = new mysqli('localhost', 'root', '', '58151', '3306') or die('Error connecting.');
 
 $query = "INSERT INTO broodjes VALUES (0,?,?,?,?)";
 $stmt = $mysqli->prepare($query) or die ("Error preparing.");

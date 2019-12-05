@@ -3,7 +3,7 @@
 
     function tabelmaken()
     {
-        $dbc = mysqli_connect('localhost','root', '', 'bakkerijvlecht') or die('Error connecting.');
+        $dbc = mysqli_connect('localhost','root', '', '58151') or die('Error connecting.');
         $query = "SELECT* FROM broodjes";
         $result = mysqli_query($dbc, $query) or die ("Error querying.");
         while ($row = mysqli_fetch_array($result)){

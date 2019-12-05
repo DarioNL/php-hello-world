@@ -3,7 +3,7 @@ $id = $_GET['id'];
 function details($detail)
 {
     $id = $_GET['id'];
-    $dbc = mysqli_connect('localhost', 'root', '', 'bakkerijvlecht') or die('Error connecting.');
+    $dbc = mysqli_connect('localhost', 'root', '', '58151') or die('Error connecting.');
     $query = "SELECT $detail FROM broodjes WHERE image_id = $id";
     $result = mysqli_query($dbc, $query) or die ("Error querying.");
     while($row = $result->fetch_assoc()) {

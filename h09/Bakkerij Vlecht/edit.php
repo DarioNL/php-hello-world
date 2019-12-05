@@ -18,9 +18,9 @@ if (isset($_FILES['bestandAanpassen']) && !empty($_POST['omschijvingAanpassen'])
 <head>
     <meta charset="UTF-8">
     <title>Bakkerij Vlecht</title>
-    <link href="broodstyle2.css" rel="stylesheet">
+    <link href="broodstyle.css" type="text/css" rel="stylesheet">
 </head>
-<body
+<body>
 <header>
     <div class="container">
         <h2 style="color:white">Bakkerij Vlecht Beheer</h2>
@@ -37,7 +37,7 @@ if (isset($_FILES['bestandAanpassen']) && !empty($_POST['omschijvingAanpassen'])
 </h2>
 <form role="form" method="post" enctype="multipart/form-data" action="BroodTabelAanpassen.php?id=<?php echo $id ?>">
 <div class="form">
-    <label for="userfile[]">Afbeelding</label>
+    <label class="bestand1" for="userfile[]">Afbeelding</label>
     <input  type="file" class="Form kiezen" name="bestandAanpassen">
 </div>
 <div class="form">

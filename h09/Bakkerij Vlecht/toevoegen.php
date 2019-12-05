@@ -16,9 +16,9 @@ if (isset($_FILES['bestand']) && !empty($_POST['omschijving'])
 <head>
     <meta charset="UTF-8">
     <title>Bakkerij Vlecht</title>
-    <link href="broodstyle.css" rel="stylesheet">
+    <link href="broodstyle.css" type="text/css" rel="stylesheet">
 </head>
-<body
+<body>
 <header>
     <div class="container">
         <h2 style="color:white">Bakkerij Vlecht Beheer</h2>

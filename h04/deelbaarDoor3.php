@@ -3,8 +3,8 @@
 
 
 function deelbaarDoor3($getal){
-    $antwoordt = $getal % 3;
-    if ($antwoordt = 10) {
+    $antwoord = $getal % 3;
+    if ($antwoord = 10) {
         echo $getal. " is deelbaar door drie";
     }else{
         echo $getal." niet deelbaar door 3 ";
